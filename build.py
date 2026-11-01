@@ -1,6 +1,6 @@
 """collapsiblebbqgrill.com build. Run: python3 build.py
-To switch on visit counting, replace GC_CODE_collapsiblebbqgrill in GOATCOUNTER below with the real GoatCounter code, then rebuild."""
-GOATCOUNTER = "https://GC_CODE_collapsiblebbqgrill.goatcounter.com/count"
+To switch on visit counting, replace collapsiblebbqgrill in GOATCOUNTER below with the real GoatCounter code, then rebuild."""
+GOATCOUNTER = "https://collapsiblebbqgrill.goatcounter.com/count"
 DOMAIN = "https://collapsiblebbqgrill.com"
 UTM_SOURCE = "collapsiblebbqgrill"
 SITE_NAME = "Collapsible BBQ Grill"
