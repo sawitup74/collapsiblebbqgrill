@@ -7,14 +7,14 @@ SITE_NAME = "Collapsible BBQ Grill"
 LASTMOD = "2026-10-31"
 THEME_COLOR = "#1f2a36"
 HOME_IMG = "both16"
-HOME_TITLE = "Collapsible BBQ Grill: Flat-Pack Charcoal Grill Guides, Setup & Recipes"
-HOME_DESC = "How collapsible flat-pack charcoal grills work, how to set one up, season it, cook on it and pack it away, with recipes and honest sizing advice."
+HOME_TITLE = "Collapsible BBQ Grill: Flat Pack Charcoal Grill Guides, Setup & Recipes"
+HOME_DESC = "How collapsible flat pack charcoal grills work, how to set one up, season it, cook on it and pack it away, with recipes and honest sizing advice."
 BRAND_HTML = '<span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="wm">collapsible<b>bbq</b>grill</span>'
-FOOTER_BLURB = "<b>Collapsible BBQ Grill</b> is a guide site about flat-pack charcoal grills: how they go together, how to run a fire in one, and how to care for raw carbon steel. It is published by Slot Grill, and every guide is written around the Slot Grill Compact and Full Size."
+FOOTER_BLURB = "<b>Collapsible BBQ Grill</b> is a guide site about flat pack charcoal grills: how they go together, how to run a fire in one, and how to care for raw carbon steel. It is published by Slot Grill, and every guide is written around the Slot Grill Compact and Full Size."
 NOTE = "Specs and prices on this site come from SlotGrill.com. Grill outdoors only, on a stable, level, non-combustible surface, and follow local fire rules and burn bans."
 CATS = {
- "basics": ("how-collapsible-grills-work", "How Collapsible Grills Work", "Tab-and-slot construction, carbon steel, steel gauge, airflow and what separates a flat-pack grill from other portable charcoal grills.", "How they work"),
- "setup": ("setup-and-fire", "Setup &amp; Fire", "Putting a flat-pack grill together, lighting it, building heat zones, feeding the fire and cooking on grates, griddle plates and cast iron.", "Setup &amp; fire"),
+ "basics": ("how-collapsible-grills-work", "How Collapsible Grills Work", "Tab-and-slot construction, carbon steel, steel gauge, airflow and what separates a flat pack grill from other portable charcoal grills.", "How they work"),
+ "setup": ("setup-and-fire", "Setup &amp; Fire", "Putting a flat pack grill together, lighting it, building heat zones, feeding the fire and cooking on grates, griddle plates and cast iron.", "Setup &amp; fire"),
  "recipes": ("recipes", "Recipes", "Recipes written for the cooking area of a collapsible grill, with fire setup, timing and safe internal temperatures.", "Recipes"),
  "care": ("care-and-storage", "Care &amp; Storage", "Seasoning, cleaning, rust, ash and packing a carbon steel grill flat for the shelf or the trunk.", "Care"),
  "choosing": ("choosing-a-collapsible-grill", "Choosing a Collapsible Grill", "Who a collapsible charcoal grill suits, what to look for, how to size one and how the two Slot Grills compare.", "Choosing"),
@@ -182,6 +182,7 @@ def article(slug, title, desc, img, body, cat, faq):
     return shell(title, desc, slug, inner, img=IMG[img], faq=faq, trail=trail)
 def cardgrid(ps):
     return '<div class="grid">' + "".join('<a class="card" href="/%s.html"><img src="%s" alt="" loading="lazy"><div><h3>%s</h3><p>%s</p></div></a>' % (s, IMG[i], t, d) for s, t, d, i, *_ in ps) + "</div>"
+REDIRECTS = {"flat-pack-vs-folding-vs-fixed-grills": "flat-pack-vs-hinged-vs-fixed-grills"}
 def build():
     open("style.css", "w").write(CSS)
     open("favicon.svg", "w").write(FAVICON)
@@ -200,6 +201,8 @@ def build():
         ps = [p for p in PAGES if p[5] == k]
         trail = [("Home", "/"), (c[1], None)]
         open(c[0] + ".html", "w").write(shell(c[1] + " | " + SITE_NAME, c[2], c[0], crumbs(trail) + "<h1>%s</h1><p class=\"lede\">%s</p>" % (c[1], c[2]) + cardgrid(ps) + productbox(), kind="CollectionPage", trail=trail, wide=True))
+    for o, n in REDIRECTS.items():
+        open(o + ".html", "w").write('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="%s/%s.html"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=/%s.html"></head><body><p>This page moved to <a href="/%s.html">/%s.html</a>.</p></body></html>' % (DOMAIN, n, n, n, n))
     open("index.html", "w").write(shell(HOME_TITLE, HOME_DESC, "index", home_html(), img=IMG[HOME_IMG], wide=True))
     open("404.html", "w").write(shell("Page not found | " + SITE_NAME, "That page isn't here. Browse the guides instead.", "404",
         "<h1>That page isn't here</h1><p>The link may be old or mistyped. Try one of these:</p>" + ul(['<a href="/">Home</a>'] + ['<a href="/%s.html">%s</a>' % (c[0], c[1]) for c in CATS.values()] + ['<a href="/faq.html">FAQ</a>']), kind="WebPage"))

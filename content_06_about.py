@@ -1,17 +1,17 @@
 page("about","About Collapsible BBQ Grill","Who publishes Collapsible BBQ Grill, what the site covers, and how product facts are sourced from SlotGrill.com.","c13",f"""
-<p>Collapsible BBQ Grill is a guide site about one kind of cooker: the flat-pack, tab-and-slot charcoal grill. It covers how they go together, how to manage fire in them, how to care for raw carbon steel, and what to cook.</p>
+<p>Collapsible BBQ Grill is a guide site about one kind of cooker: the flat pack, tab-and-slot charcoal grill. It covers how they go together, how to manage fire in them, how to care for raw carbon steel, and what to cook.</p>
 <h2>Who's behind it</h2><p>This site is published by Slot Grill. The <a href="{HOME}">Slot Grill</a> is a collapsible carbon steel charcoal grill made in the USA by Keith in Buna, Texas, in a Compact and a Full Size, with an optional griddle. Because we make the grill we write about, every guide uses it as the example.</p>
 <h2>How we handle facts</h2>{ul(["Specs, weights, sizes and prices come from SlotGrill.com. If they differ, SlotGrill.com is right.","Food safety temperatures follow USDA minimums.","We don't publish made-up reviews or ratings."])}
 <h2>Questions</h2><p>Use the <a href="{CONTACT}">Slot Grill contact form</a>.</p>
 ""","about")
 page("faq","Collapsible Grill FAQ","Answers to common questions about collapsible charcoal grills, setup, fuel, seasoning, rust and the Slot Grill.","c07","<p>Every question answered across this site, grouped by topic.</p>","about")
-page("glossary","Collapsible Grill Glossary","Plain definitions of terms used for collapsible and flat-pack charcoal grills, carbon steel care and charcoal cooking.","c13","<dl>"+"".join("<dt><b>%s</b></dt><dd>%s</dd>"%t for t in [
+page("glossary","Collapsible Grill Glossary","Plain definitions of terms used for collapsible and flat pack charcoal grills, carbon steel care and charcoal cooking.","c13","<dl>"+"".join("<dt><b>%s</b></dt><dd>%s</dd>"%t for t in [
 ("Air gap","On a Slot Grill, the space between the table and the bottom of the coal bed: 2⅞&quot; on the Compact, 3⅝&quot; on the Full Size."),
 ("Ash catcher","The formed bottom that catches stray ash and stiffens the body."),
 ("Carbon steel","Iron with a small amount of carbon. Strong, takes seasoning, rusts if left bare and wet."),
 ("Chimney starter","A metal cylinder for lighting charcoal with paper, no lighter fluid."),
 ("Direct heat","Food right over the coals."),
-("Flat-pack","A grill that comes fully apart into flat plates."),
+("Flat pack","A grill that comes fully apart into flat plates."),
 ("Gauge","A steel thickness number; lower is thicker."),
 ("Griddle (plancha)","A flat steel plate cooked on like a flat top."),
 ("Grate key","The tool for lifting grates; on the Slot Grill it doubles as a bottle opener."),
