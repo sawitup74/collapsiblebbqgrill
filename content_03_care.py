@@ -1,0 +1,35 @@
+page("seasoning-a-new-collapsible-grill","Seasoning a New Carbon Steel Collapsible Grill","How to season a raw carbon steel flat-pack grill before first use, what oil to use, and how to build up the coating.","balm",f"""
+<p>Raw carbon steel needs seasoning: a thin layer of oil heated until it bonds to the metal as a hard, slick coating. Seasoning protects against rust and helps food release. Slot Grill's specs page puts it simply: season before first use by heating a very thin layer of food-safe oil onto clean steel.</p>
+<h2>What you need</h2>{ul(["Food-safe oil with a high smoke point, or <a href='{0}'>Slot Grill Seasoning Balm</a> (an avocado oil and beeswax blend, per Slot Grill)".format(BALM),"Paper towels or a cotton rag","Charcoal and a lighter","Heat-safe gloves"])}
+<h2>Step by step</h2>{ol(["Wash off any shop dust with warm water and a little soap, then dry completely.","Wipe a <b>very thin</b> layer of oil or balm on the grates, griddle plates and inside surfaces. Then wipe it off as if you made a mistake; what remains is enough. Too much oil turns sticky.","Assemble the grill, light a moderate charcoal fire and let the steel heat for about an hour. Slot Grill's balm instructions say to heat to 400°F for 1 hour to cure.","Let it cool, and repeat 2 to 3 times for a better coating, as the balm bundle page suggests.","Over time the steel darkens. That patina is the seasoning working."])}
+<h2>Body vs cooking surfaces</h2><p>Slot Grill's FAQ says the makers like high-temperature BBQ paint on the outer body and keep the grilling surfaces lightly oiled. The balm page describes balm as a food-safe alternative to paint for the body. Never paint grates or griddle plates.</p>
+""","care",[("How many coats of seasoning?","Two or three thin coats to start, then maintain with a light coat of oil after cooks."),("Why is my seasoning sticky?","Too much oil. Wipe thinner and heat longer.")])
+
+page("cleaning-a-collapsible-grill-after-a-cook","Cleaning a Collapsible Grill After a Cook","A five-minute routine for cleaning grates, griddle plates and the firebox of a flat-pack charcoal grill so it's ready next time.","c13",f"""
+<p>The best time to clean is while the grill is still warm, not hot. Five minutes now saves twenty later.</p>
+<h2>The routine</h2>{ol(["While the grates are warm, scrape them with a grill scraper or balled-up foil held in tongs.","Scrape griddle plates with a flat scraper; wipe with a paper towel.","Let everything cool fully.","Empty the ash ({0}).".format(L("charcoal-ash-handling-and-disposal","safe ash disposal")),"Wipe cooking surfaces with a thin coat of oil or <a href='{0}'>seasoning balm</a>.".format(BALM),"Pack flat and store dry."])}
+<h2>Stuck-on food</h2><p>Warm the grill again over a few coals, then scrape. For griddle plates, a splash of water on a warm plate lifts residue. Avoid soaking carbon steel; if you wash it, dry it immediately over heat and oil it.</p>
+<h2>What not to do</h2>{ul(["Don't put carbon steel parts in a dishwasher.","Don't leave it wet overnight.","Don't use oven cleaner on cooking surfaces."])}
+""","care",[("Can I wash a carbon steel grill with soap?","A little mild soap is fine occasionally; dry immediately and re-oil.")])
+
+page("surface-rust-on-carbon-steel","Surface Rust on a Carbon Steel Grill: Prevent It and Fix It","Why carbon steel grills rust, why light surface rust is cosmetic, and how to clean and re-season a collapsible grill.","c08",f"""
+<p>Carbon steel rusts when it is bare and damp. Slot Grill's FAQ is straightforward: light surface rust is purely cosmetic; clean it off and re-season.</p>
+<h2>Prevent it</h2>{ul(["Keep cooking surfaces lightly oiled after every cook.","Store dry, out of the rain, with airflow (not sealed wet in a bag).","After a damp trip, warm the grill over a few coals to drive off moisture before packing.","Season the body: high-temp BBQ paint, or balm as a food-safe alternative."])}
+<h2>Fix it</h2>{ol(["Scrub the rust with steel wool or a stiff wire brush until you see bare or dark steel.","Wipe off the dust.","Apply a very thin coat of oil or <a href='{0}'>Seasoning Balm</a>.".format(BALM),"Heat it over a fire to cure, as in {0}.".format(L("seasoning-a-new-collapsible-grill","seasoning")),"Repeat if needed."])}
+<h2>When to worry</h2><p>Light orange surface rust is routine. Deep flaking rust from long neglect takes more scrubbing, but thick steel gives you plenty of material to work with.</p>
+""","care",[("Is surface rust dangerous on a grill?","Light surface rust is cosmetic. Clean it off and re-season before cooking.")])
+
+page("packing-flat-and-storing-a-collapsible-grill","Packing Flat and Storing a Collapsible Grill","How to pack a collapsible charcoal grill flat, keep soot off your gear, and store it between seasons.","both16",f"""
+<p>The point of a collapsible grill is the flat pack. A little system keeps it clean and quick.</p>
+<h2>Packing order</h2>{ol(["Cool completely and empty the ash.","Lift off grates and griddles.","Slide out the V side panel, then pull the end pieces off.","Stack: panels together, grates and griddles together, then the whole bundle. Slot Grill's specs page says the grill, grates and griddles pack into one flat bundle."])}
+{table(["Model","Packed thickness","Packed weight"],[["Compact","About 1&quot;","14 lb; 16.2 lb with 1 griddle; 18.4 lb with 2"],["Full Size","About 1.25&quot;","27.6 lb; 31.8 lb with 1 griddle; 36.4 lb with 2"]])}
+<h2>Keep soot contained</h2><p>A canvas bag, an old pillowcase or the original box keeps soot off seats and gear. Pack the grill flat against the side of a trunk or camp box.</p>
+<h2>Long-term storage</h2>{ul(["Oil the cooking surfaces first.","Store indoors or somewhere dry, off a concrete floor that wicks moisture.","Check it before the season starts; touch up any rust."])}
+""","care",[("How flat does the Slot Grill pack?","About 1 inch for the Compact and about 1.25 inches for the Full Size.")])
+
+page("charcoal-ash-handling-and-disposal","Charcoal Ash: Safe Handling and Disposal","How long charcoal ash stays hot, how to put it out, and how to dispose of it from a collapsible grill safely.","c13",f"""
+<p>Ash looks dead long before it is. Buried embers can stay hot for many hours, and hot ash in a trash can or plastic bin starts fires.</p>
+<h2>The safe way</h2>{ol(["Let the coals burn out in the grill.","Where water is available and allowed, drown the ash and stir. Repeat until cold to the touch.","Otherwise wait until it's completely cold.","Transfer to a metal can with a tight lid.","Dispose of it where the campground, park or local rules say."])}
+<h2>Never</h2>{ul(["Never dump hot ash on grass, in a trash can or near a vehicle.","Never pack a warm grill into a car.","Never bury hot coals; they can smolder underground."])}
+<p>Empty ash before every cook, too: built-up ash chokes airflow, as covered in {L("air-gap-and-airflow-in-a-collapsible-grill","airflow")}.</p>
+""","care",[("How long does charcoal ash stay hot?","It can stay hot for many hours. Treat it as hot until it's cold to the touch.")])
