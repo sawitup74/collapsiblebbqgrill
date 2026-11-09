@@ -233,3 +233,7 @@ def home_html():
     return HOME_HERO + secs + '<section class="hsec"><h2>The two Slot Grills, side by side</h2><p>Both are tab-and-slot, carbon steel, made in Texas. ' + L("compact-vs-full-size-slot-grill", "Full comparison →") + "</p>" + productbox("compact") + productbox("full") + "</section>"
 if __name__ == "__main__":
     build()
+
+# Indexing post-process (2026-11-09): 404 noindex, redirect stubs without noindex, real sitemap lastmod
+import subprocess as _sp, sys as _sys
+_sp.run([_sys.executable, "postfix_indexing.py"])
